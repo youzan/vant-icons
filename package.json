@@ -8,7 +8,8 @@
   ],
   "scripts": {
     "export": "node ./build/export.js",
-    "build": "gulp --gulpfile ./build/build-iconfont.js"
+    "build": "gulp --gulpfile ./build/build-iconfont.js",
+    "release": "sh ./build/release.sh"
   },
   "repository": {
     "type": "git",
