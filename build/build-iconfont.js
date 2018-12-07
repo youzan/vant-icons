@@ -6,11 +6,12 @@ const gulp = require('gulp');
 const path = require('path');
 const glob = require('fast-glob');
 const shell = require('shelljs');
+const encode = require('./build-encode');
 const md5File = require('md5-file');
 const iconfont = require('gulp-iconfont');
 const iconfontCss = require('gulp-iconfont-css');
+const local = require('./build-encode');
 const config = require('../src/config');
-// const local = require('../packages/icon/config/template-local');
 
 const srcDir = path.join(__dirname, '../src');
 const svgDir = path.join(__dirname, '../assets/svg');
@@ -25,7 +26,7 @@ const ttf = `${config.name}-${md5}.ttf`;
 const prevTTFs = glob.sync(path.join(srcDir, '*.ttf'));
 prevTTFs.forEach(ttf => fs.removeSync(ttf));
 
-// generate ttf from sketch && build icon.css
+// generate ttf from svg && build index.less
 gulp.task('ttf', () => {
   return gulp
     .src([`${svgDir}/*.svg`])
@@ -49,9 +50,9 @@ gulp.task('ttf', () => {
 });
 
 gulp.task('default', ['ttf'], () => {
-  // generate icon-local.css
-  // fs.writeFileSync(path.join(srcDir, 'local.less'), local(config.name, ttf));
-
+  // generate encode.less
+  encode(ttf, srcDir);
+  
   // upload ttf to cdn
   shell.exec(`superman cdn /vant ${path.join(srcDir, ttf)}`);
 });

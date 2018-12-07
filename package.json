@@ -1,14 +1,14 @@
 {
   "name": "vant-icons",
-  "version": "0.0.1",
+  "version": "0.0.1-beta",
   "description": "vant icons",
   "main": "./src/config.js",
   "files": [
     "src"
   ],
   "scripts": {
-    "export": "node ./build/export-svg.js",
-    "build": "gulp --gulpfile ./build/iconfont.js"
+    "export": "node ./build/export.js",
+    "build": "gulp --gulpfile ./build/build-iconfont.js"
   },
   "repository": {
     "type": "git",
@@ -31,7 +31,6 @@
     "gulp-iconfont": "^10.0.2",
     "gulp-iconfont-css": "^2.3.0",
     "md5-file": "^4.0.0",
-    "path": "^0.12.7",
     "shelljs": "^0.8.3"
   }
 }
