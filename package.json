@@ -25,7 +25,7 @@
     "url": "https://github.com/youzan/vant-icons/issues"
   },
   "homepage": "https://github.com/youzan/vant-icons#readme",
-  "dependencies": {
+  "devDependencies": {
     "fast-glob": "^2.2.4",
     "fs-extra": "^7.0.1",
     "gulp": "^3.9.1",
