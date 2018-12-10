@@ -1,7 +1,10 @@
+const fs = require('fs-extra');
 const path = require('path');
 const shell = require('shelljs');
 const svgDir = path.join(__dirname, '../assets/svg');
 const sketch = path.join(__dirname, '../assets/icons.sketch');
+
+fs.removeSync(svgDir);
 
 // extract svg from sketch
 // should install sketchtool first

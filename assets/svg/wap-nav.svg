@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="1000px" height="1000px" viewBox="0 0 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: sketchtool 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
-    <title>nav</title>
+    <title>wap-nav</title>
     <desc>Created with sketchtool.</desc>
     <g id="新版图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="nav" fill="#323233">
+        <g id="wap-nav" fill="#323233">
             <g id="圆角-导航入口">
                 <path d="M111.111111,222.222222 L888.888889,222.222222 L888.888889,319.444444 L111.111111,319.444444 L111.111111,222.222222 Z M111.111111,465.277778 L888.888889,465.277778 L888.888889,562.5 L111.111111,562.5 L111.111111,465.277778 Z M111.111111,708.333333 L888.888889,708.333333 L888.888889,805.555556 L111.111111,805.555556 L111.111111,708.333333 Z" id="Combined-Shape"></path>
             </g>
