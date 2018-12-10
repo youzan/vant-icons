@@ -17,7 +17,7 @@
   }
 }
 
-<% _.each(glyphs, function(glyph) { %>.van-icon-<%= glyph.fileName %>::before {
+<% _.each(glyphs, function(glyph) { %>.van-icon-<%= glyph.fileName %>:before {
   content: "\<%= glyph.codePoint %>";
 }
 

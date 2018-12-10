@@ -12,3 +12,5 @@ fs.removeSync(svgDir);
 shell.exec(
   `/Applications/Sketch.app/Contents/Resources/sketchtool/bin/sketchtool export slices --formats=svg --overwriting=YES --save-for-web=YES --output=${svgDir} ${sketch}`
 );
+
+shell.exec('svgo ./assets/svg/*.svg');

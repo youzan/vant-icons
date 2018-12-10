@@ -32,6 +32,7 @@
     "gulp-iconfont": "^10.0.2",
     "gulp-iconfont-css": "^2.3.0",
     "md5-file": "^4.0.0",
-    "shelljs": "^0.8.3"
+    "shelljs": "^0.8.3",
+    "svgo": "^1.1.1"
   }
 }
