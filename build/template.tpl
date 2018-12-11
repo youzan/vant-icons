@@ -2,7 +2,9 @@
   font-style: normal;
   font-weight: normal;
   font-family: '<%= fontName %>';
-  src: url('https://img.yzcdn.cn/vant/<%= cssClass %>') format('truetype');
+  src: url('//img.yzcdn.cn/vant/<%= cssClass %>.woff2') format('woff2'),
+       url('//img.yzcdn.cn/vant/<%= cssClass %>.woff') format('woff'),
+       url('//img.yzcdn.cn/vant/<%= cssClass %>.ttf') format('truetype');
 }
 
 .van-icon {
@@ -11,6 +13,7 @@
   font: normal normal normal 14px/1 "<%= fontName %>";
   font-size: inherit;
   text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
 
   &::before {
     display: inline-block;

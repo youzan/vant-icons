@@ -17,17 +17,18 @@ const srcDir = path.join(__dirname, '../src');
 const svgDir = path.join(__dirname, '../assets/svg');
 const sketch = path.join(__dirname, '../assets/icons.sketch');
 const template = path.join(__dirname, './template.tpl');
+const formats = ['ttf', 'woff', 'woff2'];
 
 // get md5 from sketch
 const md5 = md5File.sync(sketch).slice(0, 6);
-const ttf = `${config.name}-${md5}.ttf`;
+const fontName = `${config.name}-${md5}`;
 
-// remove previous ttf
-const prevTTFs = glob.sync(path.join(srcDir, '*.ttf'));
-prevTTFs.forEach(ttf => fs.removeSync(ttf));
+// remove previous fonts
+const prevFonts = glob.sync(formats.map(ext => path.join(srcDir, '*.' + ext)));
+prevFonts.forEach(font => fs.removeSync(font));
 
-// generate ttf from svg && build index.less
-gulp.task('ttf', () => {
+// generate font from svg && build index.less
+gulp.task('font', () => {
   return gulp
     .src([`${svgDir}/*.svg`])
     .pipe(
@@ -37,22 +38,24 @@ gulp.task('ttf', () => {
         targetPath: '../src/index.less',
         normalize: true,
         firstGlyph: 0xf000,
-        cssClass: ttf // this is a trick to pass ttf to template
+        cssClass: fontName // this is a trick to pass fontName to template
       })
     )
     .pipe(
       iconfont({
-        fontName: ttf.replace('.ttf', ''),
-        formats: ['ttf']
+        fontName,
+        formats
       })
     )
     .pipe(gulp.dest(srcDir));
 });
 
-gulp.task('default', ['ttf'], () => {
+gulp.task('default', ['font'], () => {
   // generate encode.less
-  encode(ttf, srcDir);
-  
-  // upload ttf to cdn
-  shell.exec(`superman cdn /vant ${path.join(srcDir, ttf)}`);
+  encode(fontName, srcDir);
+
+  // upload font to cdn
+  formats.forEach(ext => {
+    shell.exec(`superman cdn /vant ${path.join(srcDir, fontName + '.' + ext)}`);
+  });
 });
