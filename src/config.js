@@ -60,6 +60,10 @@ module.exports = {
     'diamond-o',
     'volume-o',
     'cluster-o',
+    'underway-o',
+    'photo-o',
+    'gift-card-o',
+    'more-o',
     // without corresponding filled icon
     'phone-circle-o',
     'smile-o',
@@ -138,7 +142,10 @@ module.exports = {
     'other-pay',
     'tosend',
     'pending-payment',
-    'paid'
+    'paid',
+    'aim',
+    'discount',
+    'idcard'
   ],
   filled: [
     // has corresponding outline icon
@@ -190,15 +197,20 @@ module.exports = {
     'diamond',
     'volume',
     'cluster',
+    'underway',
+    'photo',
+    'gift-card',
+    'more',
     // without corresponding outline icon
     'alipay',
     'wechat',
     'photograph',
-    'photo',
+    'picture',
     'youzan-shield',
     'umbrella-circle',
     'bell',
     'printer',
-    'map-marked'
+    'map-marked',
+    'card'
   ]
 };
