@@ -211,6 +211,8 @@ module.exports = {
     'bell',
     'printer',
     'map-marked',
-    'card'
+    'card',
+    'add-square',
+    'new'
   ]
 };
