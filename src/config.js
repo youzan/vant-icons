@@ -197,7 +197,6 @@ module.exports = {
     'alipay',
     'wechat',
     'photograph',
-    'picture',
     'youzan-shield',
     'umbrella-circle',
     'bell',
