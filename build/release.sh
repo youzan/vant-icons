@@ -13,6 +13,7 @@ then
 
   # commit
   git tag v$VERSION
+  git add .
   git commit -am "[release] $VERSION"
 
   # publish
