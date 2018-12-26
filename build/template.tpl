@@ -2,9 +2,9 @@
   font-style: normal;
   font-weight: normal;
   font-family: '<%= fontName %>';
-  src: url('//img.yzcdn.cn/vant/<%= cssClass %>.woff2') format('woff2'),
-       url('//img.yzcdn.cn/vant/<%= cssClass %>.woff') format('woff'),
-       url('//img.yzcdn.cn/vant/<%= cssClass %>.ttf') format('truetype');
+  src: url('https://img.yzcdn.cn/vant/<%= cssClass %>.woff2') format('woff2'),
+       url('https://img.yzcdn.cn/vant/<%= cssClass %>.woff') format('woff'),
+       url('https://img.yzcdn.cn/vant/<%= cssClass %>.ttf') format('truetype');
 }
 
 .van-icon {
