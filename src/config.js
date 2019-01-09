@@ -64,6 +64,7 @@ module.exports = {
     'photo-o',
     'gift-card-o',
     'more-o',
+    'cart-circle-o',
     // without corresponding filled icon
     'phone-circle-o',
     'smile-o',
@@ -95,7 +96,6 @@ module.exports = {
     'desktop-o',
     'apps-o',
     'home-o',
-    'cart-circle-o',
     'share',
     'search',
     'points',
@@ -194,6 +194,7 @@ module.exports = {
     'photo',
     'gift-card',
     'more',
+    'cart-circle',
     // without corresponding outline icon
     'alipay',
     'wechat',
