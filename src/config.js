@@ -95,6 +95,7 @@ module.exports = {
     'desktop-o',
     'apps-o',
     'home-o',
+    'cart-circle-o',
     'share',
     'search',
     'points',
