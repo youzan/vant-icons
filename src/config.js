@@ -66,6 +66,9 @@ module.exports = {
     'gift-card-o',
     'more-o',
     'expand-o',
+    'play-circle-o',
+    'pause-circle-o',
+    'stop-circle-o',
     // without corresponding filled icon
     'phone-circle-o',
     'smile-o',
@@ -107,9 +110,6 @@ module.exports = {
     'closed-eye',
     'wap-home',
     'scan',
-    'play',
-    'pause',
-    'stop',
     'free-postage',
     'certificate',
     'logistics',
@@ -139,7 +139,11 @@ module.exports = {
     'paid',
     'aim',
     'discount',
-    'idcard'
+    'idcard',
+    'ascending',
+    'descending',
+    'replay',
+    'shrink'
   ],
   filled: [
     // has corresponding outline icon
@@ -197,6 +201,9 @@ module.exports = {
     'gift-card',
     'more',
     'expand',
+    'play-circle',
+    'pause-circle',
+    'stop-circle',
     // without corresponding outline icon
     'alipay',
     'wechat',
@@ -207,6 +214,15 @@ module.exports = {
     'printer',
     'map-marked',
     'card',
-    'add-square'
+    'add-square',
+    'live',
+    'lock',
+    'audio',
+    'graphic',
+    'column',
+    'invition',
+    'play',
+    'pause',
+    'stop',
   ]
 };
