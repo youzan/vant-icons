@@ -119,8 +119,6 @@ module.exports = {
     'after-sale',
     'exchange',
     'upgrade',
-    'bars',
-    'wap-nav',
     'ellipsis',
     'circle',
     'description',
@@ -224,6 +222,8 @@ module.exports = {
     'pause',
     'stop',
     'ascending',
-    'descending'
+    'descending',
+    'bars',
+    'wap-nav'
   ]
 };
