@@ -69,6 +69,7 @@ module.exports = {
     'play-circle-o',
     'pause-circle-o',
     'stop-circle-o',
+    'warning-o',
     // without corresponding filled icon
     'phone-circle-o',
     'smile-o',
@@ -140,8 +141,6 @@ module.exports = {
     'aim',
     'discount',
     'idcard',
-    'ascending',
-    'descending',
     'replay',
     'shrink'
   ],
@@ -224,5 +223,7 @@ module.exports = {
     'play',
     'pause',
     'stop',
+    'ascending',
+    'descending'
   ]
 };
