@@ -221,6 +221,7 @@ module.exports = {
     'play',
     'pause',
     'stop',
+    'weapp-nav',
     'ascending',
     'descending',
     'bars',
