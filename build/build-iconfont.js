@@ -1,6 +1,7 @@
 /**
  * build iconfont from sketch
  */
+const { src, dest, series } = require('gulp');
 const fs = require('fs-extra');
 const gulp = require('gulp');
 const path = require('path');
@@ -28,9 +29,8 @@ const prevFonts = glob.sync(formats.map(ext => path.join(srcDir, '*.' + ext)));
 prevFonts.forEach(font => fs.removeSync(font));
 
 // generate font from svg && build index.less
-gulp.task('font', () => {
-  return gulp
-    .src([`${svgDir}/*.svg`])
+function font() {
+  return src([`${svgDir}/*.svg`])
     .pipe(
       iconfontCss({
         fontName: config.name,
@@ -47,10 +47,10 @@ gulp.task('font', () => {
         formats
       })
     )
-    .pipe(gulp.dest(srcDir));
-});
+    .pipe(dest(srcDir));
+}
 
-gulp.task('default', ['font'], () => {
+function upload(done) {
   // generate encode.less
   encode(fontName, srcDir);
 
@@ -58,4 +58,8 @@ gulp.task('default', ['font'], () => {
   formats.forEach(ext => {
     shell.exec(`superman cdn /vant ${path.join(srcDir, fontName + '.' + ext)}`);
   });
-});
+
+  done();
+}
+
+exports.default = series(font, upload);
