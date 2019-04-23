@@ -8,8 +8,6 @@
 
 <h1 align="center" style="margin: 30px 0 35px;">Vant Icons</h1>
 
----
-
 ## Install
 
 #### NPM
@@ -32,3 +30,16 @@ yarn add @vant/icons
 ## Preview
 
 <img src="https://b.yzcdn.cn/vant-icons/icon_preview_1212.png" width="100%">
+
+## Contribution
+
+### Update Icons
+
+1. Update assets/icons.sketch
+2. Make a Pull Request
+
+### Add New Icon
+
+1. Add new icon to assets/icons.sketch
+2. Add icon name to src/config.js
+3. Make a Pull Request
