@@ -1,5 +1,10 @@
 ## Changelog
 
+## 1.1.7
+
+- fix new incomplete display
+- fix question incomplete display
+
 ## 1.1.6
 
 - update new icon & hot icon
