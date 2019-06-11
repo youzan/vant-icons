@@ -1,5 +1,9 @@
 ## Changelog
 
+## 1.1.8
+
+- update location-o icon
+
 ## 1.1.7
 
 - fix new incomplete display
