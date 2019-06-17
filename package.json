@@ -26,13 +26,13 @@
   },
   "homepage": "https://github.com/youzan/vant-icons#readme",
   "devDependencies": {
-    "fast-glob": "^2.2.6",
-    "fs-extra": "^7.0.1",
-    "gulp": "^4.0.0",
-    "gulp-iconfont": "^10.0.2",
+    "fast-glob": "^3.0.0",
+    "fs-extra": "^8.0.1",
+    "gulp": "^4.0.2",
+    "gulp-iconfont": "^10.0.3",
     "gulp-iconfont-css": "^3.0.0",
     "md5-file": "^4.0.0",
     "shelljs": "^0.8.3",
-    "svgo": "^1.2.0"
+    "svgo": "^1.2.2"
   }
 }
