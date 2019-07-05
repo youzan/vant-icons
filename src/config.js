@@ -70,6 +70,9 @@ module.exports = {
     'pause-circle-o',
     'stop-circle-o',
     'warning-o',
+    'business-card-o',
+    'mall-o',
+    'moments-o',
     // without corresponding filled icon
     'phone-circle-o',
     'smile-o',
@@ -201,6 +204,9 @@ module.exports = {
     'play-circle',
     'pause-circle',
     'stop-circle',
+    'business-card',
+    'mall',
+    'moments',
     // without corresponding outline icon
     'alipay',
     'wechat',
