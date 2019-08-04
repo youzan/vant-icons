@@ -1,5 +1,17 @@
 ## Changelog
 
+## 1.1.11
+
+- add smile、music、thumb-circle、phone-circle icon
+
+## 1.1.10
+
+- add warning、good-job、good-job-o icon
+
+## 1.1.9
+
+- update checked、comment、comment-o icon
+
 ## 1.1.8
 
 - update location-o icon
