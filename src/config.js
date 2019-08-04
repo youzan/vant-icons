@@ -72,9 +72,9 @@ module.exports = {
     'warning-o',
     'phone-circle-o',
     'good-job-o',
+    'music-o',
     // without corresponding filled icon
     'smile-o',
-    'music-o',
     'balance-o',
     'refund-o',
     'birthday-cake-o',
@@ -205,6 +205,7 @@ module.exports = {
     'warning',
     'phone-circle',
     'good-job',
+    'music',
     // without corresponding outline icon
     'alipay',
     'wechat',
