@@ -69,10 +69,10 @@ module.exports = {
     'play-circle-o',
     'pause-circle-o',
     'stop-circle-o',
-    'good-job-o',
     'warning-o',
-    // without corresponding filled icon
     'phone-circle-o',
+    'good-job-o',
+    // without corresponding filled icon
     'smile-o',
     'music-o',
     'balance-o',
@@ -203,6 +203,7 @@ module.exports = {
     'pause-circle',
     'stop-circle',
     'warning',
+    'phone-circle',
     'good-job',
     // without corresponding outline icon
     'alipay',
