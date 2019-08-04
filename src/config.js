@@ -73,13 +73,13 @@ module.exports = {
     'phone-circle-o',
     'good-job-o',
     'music-o',
-    // without corresponding filled icon
     'smile-o',
+    'thumb-circle-o',
+    // without corresponding filled icon
     'balance-o',
     'refund-o',
     'birthday-cake-o',
     'user-o',
-    'thumb-circle-o',
     'orders-o',
     'tv-o',
     'envelop-o',
@@ -206,6 +206,8 @@ module.exports = {
     'phone-circle',
     'good-job',
     'music',
+    'smile',
+    'thumb-circle',
     // without corresponding outline icon
     'alipay',
     'wechat',
