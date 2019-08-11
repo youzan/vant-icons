@@ -1,5 +1,9 @@
 ## Changelog
 
+## 1.1.12
+
+- fix service-o icon incomplete
+
 ## 1.1.11
 
 - add smile、music、thumb-circle、phone-circle icon
