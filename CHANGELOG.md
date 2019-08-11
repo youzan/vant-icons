@@ -1,5 +1,9 @@
 ## Changelog
 
+## 1.1.13
+
+- fix gift-o、refund-o icon incomplete
+
 ## 1.1.12
 
 - fix service-o icon incomplete
